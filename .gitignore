@@ -129,3 +129,6 @@ dmypy.json
 yolo.cfg
 *.weights
 class.names
+
+#face-dataset-ignore
+/sagar
