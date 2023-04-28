@@ -13,15 +13,13 @@ DETECTION_METHOD = 'hog'
 TARGET_WH = 320
 THRESHOLD = 0.85
 NMS_THRESHOLD = 0.3
-#DATA = pickle.loads(open(ENCODINGS_PATH, "rb").read())
-#with open(CLASSESFILE, 'rt') as f: CLASSNAMES = f.read().rstrip('\n').split('\n')
+
 
 with open(ENCODINGS_PATH , 'rb') as f:
     DATA = pickle.load(f)
 
 with open(CLASSESFILE , 'rt') as f:
     CLASSNAMES = f.read().rstrip('\n').split('\n')
-    #CLASSNAMES = "head"
 
 cams_in_use = []
 
